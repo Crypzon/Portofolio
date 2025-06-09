@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #222;
+  padding: 2rem;
+  max-width: 720px;
+  margin: auto;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #ddd;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.projects {
+  margin-bottom: 3rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-card {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+
+.project-card a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.contact p {
+  margin-bottom: 0.5rem;
+}
+
+.toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  border: 2px solid #222;
+  background: transparent;
+  color: inherit;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+body.dark .toggle-theme {
+  border-color: #ddd;
+}
