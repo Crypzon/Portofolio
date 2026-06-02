@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stanley Lo | Full-Stack Portfolio</title>
+  <meta name="description"
+    content="Portofolio interaktif Stanley Lo, Full-Stack Developer dengan fokus pada web engineering, UI systems, integrasi infrastruktur, dan data analytics." />
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2306070a'/%3E%3Cpath d='M18 42h26v6H12V16h6v26Zm10-26h24v6H34v7h15v6H34v13h-6V16Z' fill='%239cf56b'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="portfolio-scene" aria-hidden="true"></canvas>
+  <div class="site-grid" aria-hidden="true"></div>
+  <div class="scroll-meter" aria-hidden="true">
+    <span id="scroll-progress"></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Stanley Lo home">
+      <span class="brand-mark">SL</span>
+      <span>
+        <strong>Stanley Lo</strong>
+        <small>Full-Stack Developer</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navigasi utama">
+      <a href="#profile">Profile</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="nav-cta" href="CV-Stanley.pdf" target="_blank" rel="noreferrer">CV</a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Navigasi mobile">
+    <a href="#profile">Profile</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Jakarta Barat / Web Engineering / UI Systems</p>
+        <h1 id="hero-title">Stanley Lo</h1>
+        <p class="hero-lede">
+          Saya membangun produk web yang tajam secara visual, rapi secara sistem, dan tetap kuat saat dipakai untuk
+          kebutuhan operasional yang kompleks.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary magnetic" href="mailto:Stanleydaff588@gmail.com">Mulai Diskusi</a>
+          <a class="btn ghost magnetic" href="#projects">Lihat Proyek</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-tilt>
+        <div class="portrait-frame">
+          <img src="assets/stanley-hero.jpg" alt="Foto Stanley Lo" />
+        </div>
+        <div class="availability">
+          <span></span>
+          Available for Web, UI, and Data Work
+        </div>
+      </div>
+
+      <div class="hero-metrics reveal" aria-label="Ringkasan profil">
+        <div>
+          <strong data-count="3.31">0</strong>
+          <span>IPK Binus</span>
+        </div>
+        <div>
+          <strong data-count="5">0</strong>
+          <span>Core Projects</span>
+        </div>
+        <div>
+          <strong data-count="3">0</strong>
+          <span>Work Tracks</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" id="profile" aria-labelledby="profile-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Profile</p>
+        <h2 id="profile-title">Developer yang nyaman di antara interface, logic, dan data.</h2>
+      </div>
+
+      <div class="profile-grid">
+        <article class="profile-panel reveal" data-tilt>
+          <span class="panel-index">01</span>
+          <h3>Product Interface</h3>
+          <p>Mendesain UI yang mudah dipindai, responsif, dan terasa cepat untuk kebutuhan dashboard, sistem internal,
+            dan workflow bisnis.</p>
+        </article>
+        <article class="profile-panel reveal" data-tilt>
+          <span class="panel-index">02</span>
+          <h3>Full-Stack Delivery</h3>
+          <p>Terbiasa menghubungkan Laravel, REST API, database, dan frontend modern menjadi aplikasi yang bisa dipakai
+            langsung.</p>
+        </article>
+        <article class="profile-panel reveal" data-tilt>
+          <span class="panel-index">03</span>
+          <h3>Infra Awareness</h3>
+          <p>Memahami proses core infrastructure, integrasi sistem, dan kebutuhan operasional sehingga solusi tidak
+            berhenti di tampilan saja.</p>
+        </article>
+        <article class="profile-panel reveal" data-tilt>
+          <span class="panel-index">04</span>
+          <h3>Analytics Thinking</h3>
+          <p>Mengolah data dengan SQL, Python, dan Tableau untuk membaca pola, membuat laporan, dan memberi konteks pada
+            keputusan produk.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block project-section" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected Work</p>
+        <h2 id="projects-title">Project matrix dengan fokus pada sistem nyata.</h2>
+      </div>
+
+      <div class="project-grid">
+        <a class="project-card featured reveal" data-tilt href="#" aria-label="Inventory Asset Management">
+          <span class="project-type">Full-Stack System</span>
+          <h3>Inventory Asset Management</h3>
+          <p>Sistem manajemen inventaris dan aset untuk tracking status, riwayat transaksi, pembaruan data, dan kontrol
+            operasional.</p>
+          <div class="project-stack">
+            <span>Laravel</span>
+            <span>MySQL</span>
+            <span>Dashboard UI</span>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-tilt href="#" aria-label="Web Sekolah Makarios">
+          <span class="project-type">School Platform</span>
+          <h3>Web Sekolah Makarios</h3>
+          <p>Website sekolah dengan alur registrasi, kebutuhan informasi publik, dan dukungan PWA WhatsApp
+            notifications.</p>
+          <div class="project-stack">
+            <span>Full-Stack</span>
+            <span>PWA</span>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-tilt href="#" aria-label="Reservation System">
+          <span class="project-type">Booking Flow</span>
+          <h3>Reservation System</h3>
+          <p>Sistem reservasi online dengan kalender, notifikasi, pencatatan transaksi, dan pengalaman booking yang
+            lebih jelas.</p>
+          <div class="project-stack">
+            <span>REST API</span>
+            <span>Calendar UX</span>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-tilt href="#" aria-label="Human Resource Information System">
+          <span class="project-type">Mobile Workflow</span>
+          <h3>Human Resource Information System</h3>
+          <p>HRIS dengan absensi berbasis geolokasi, mobile workflow, dan struktur data untuk kebutuhan sumber daya
+            manusia.</p>
+          <div class="project-stack">
+            <span>Mobile</span>
+            <span>Geo Attendance</span>
+          </div>
+        </a>
+
+        <a class="project-card reveal" data-tilt href="https://crypzon.github.io/To-Do-List" target="_blank"
+          rel="noreferrer" aria-label="To-Do List API">
+          <span class="project-type">Frontend Study</span>
+          <h3>To-Do List API</h3>
+          <p>Eksperimen frontend ringan dengan desain minimalis, integrasi API, dan fokus pada interaksi yang cepat.</p>
+          <div class="project-stack">
+            <span>JavaScript</span>
+            <span>API</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-block split-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading sticky-copy reveal">
+        <p class="eyebrow">Experience</p>
+        <h2 id="experience-title">Pengalaman yang menggabungkan build, interface, dan operasi.</h2>
+        <p class="section-note">
+          Latar belakang S1 Computer Science dari Universitas Bina Nusantara, dengan pengalaman lintas web development,
+          frontend delivery, dan core infrastructure.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <span>Jun 2025 - Sep 2025</span>
+          <h3>Full Stack Developer</h3>
+          <p>PT GF Culinary</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>Jan 2024 - Jun 2024</span>
+          <h3>Frontend Developer</h3>
+          <p>PT Tunas Maju Mandiri</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>Jan 2023 - Jun 2024</span>
+          <h3>IT Core Infrastructure</h3>
+          <p>MAP - Mitra Adiperkasa</p>
+        </article>
+        <article class="timeline-item reveal">
+          <span>Computer Science</span>
+          <h3>Universitas Bina Nusantara</h3>
+          <p>IPK 3.31 / 4.00</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-block systems-section" aria-labelledby="systems-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Capabilities</p>
+        <h2 id="systems-title">Stack yang disusun untuk membangun, mengukur, dan memperbaiki produk.</h2>
+      </div>
+
+      <div class="systems-grid">
+        <div class="system-panel reveal">
+          <h3>Backend & API</h3>
+          <div class="skill-cloud">
+            <span>Laravel</span>
+            <span>REST API</span>
+            <span>MySQL</span>
+            <span>SQL</span>
+            <span>PHP</span>
+          </div>
+        </div>
+        <div class="system-panel reveal">
+          <h3>Frontend & Mobile</h3>
+          <div class="skill-cloud">
+            <span>JavaScript</span>
+            <span>React</span>
+            <span>Vue</span>
+            <span>Flutter</span>
+            <span>Responsive UI</span>
+          </div>
+        </div>
+        <div class="system-panel reveal">
+          <h3>Data & Insight</h3>
+          <div class="skill-cloud">
+            <span>Python</span>
+            <span>Tableau</span>
+            <span>Analytics</span>
+            <span>Reporting</span>
+            <span>Data UX</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-copy reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Siap membangun interface yang lebih berani dan sistem yang lebih rapi.</h2>
+      </div>
+
+      <div class="contact-actions reveal">
+        <a class="contact-link magnetic" href="mailto:Stanleydaff588@gmail.com">
+          <span>Email</span>
+          <strong>Stanleydaff588@gmail.com</strong>
+        </a>
+        <a class="contact-link magnetic" href="https://www.linkedin.com/in/stanleylo2/" target="_blank"
+          rel="noreferrer">
+          <span>LinkedIn</span>
+          <strong>stanleylo2</strong>
+        </a>
+        <a class="contact-link magnetic" href="https://github.com/Crypzon" target="_blank" rel="noreferrer">
+          <span>GitHub</span>
+          <strong>Crypzon</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
